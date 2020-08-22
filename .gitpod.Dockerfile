@@ -1,6 +1,12 @@
 FROM gitpod/workspace-full
 
-RUN export PIP_USE=no
+RUN export PIP_USER=no
+
+RUN virtualenv venv
+
+RUN source venv/bin/activate
+
+RUN pip install -r requirements.txt
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
