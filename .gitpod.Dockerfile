@@ -6,7 +6,7 @@ RUN export PIP_USER=no
 
 #RUN source venv/bin/activate
 
-#RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Install custom tools, runtimes, etc.
 # For example "bastet", a command-line tetris clone:
